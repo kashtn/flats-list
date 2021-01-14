@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+img {
+  border-radius: 10px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Source Code Pro", monospace;
+  .title {
+    text-align: center;
+  }
+  .flatContainer {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.585);
+    border-radius: 10px;
+    padding: 5px;
+    .imgContainer {
+      width: 30%;
+    }
+    .dataContainer {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 1%;
+      .topDataContainer {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bottomDataContainer {
+        display: flex;
+        justify-content: flex-end;
+        .heartButton {
+          background-color: white;
+          font-size: 100%;
+          font-family: inherit;
+          border: 0;
+          padding: 0;
+          margin-right: 20px;
+          cursor: pointer;
+          .heart {
+            color: red;
+          }
+        }
+        .heartButton:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .flatContainer:hover {
+    box-shadow: 0 0 15px rgb(170, 169, 169);
+    transition: 0.3s;
+    border: 1px solid rgba(204, 204, 204, 0.585);
+    border-radius: 10px;
+  }
+  .filterContaier {
+    display: flex;
+    .filter {
+      margin-right: 20px;
+    }
+  }
+  .noData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 757px) {
+  .flatContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
