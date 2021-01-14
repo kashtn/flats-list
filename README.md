@@ -1,6 +1,6 @@
 # Flats
 
-### `cd front -> yarn` then `cd back -> yarn`
+### `yarn -> cd front -> yarn` then `cd back -> yarn`
 
 Downloads all dependencies for frontend and backend
 
