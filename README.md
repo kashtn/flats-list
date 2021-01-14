@@ -6,8 +6,8 @@ Downloads all dependencies for frontend and backend
 
 ### `yarn start`
 
-Starts the application
+## Starts the application
 
 ![screenshot](readme-assets/flats.png)
 
-Use with Pleasure!
+## Use with Pleasure!
